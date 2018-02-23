@@ -1,0 +1,33 @@
+      MAIN
+      ALOC   2
+      JUMP   L3
+L4:   ENFN   1
+      LDVL   1,-6
+      LDVL   1,-5
+      LEQU
+      JMPF   L7
+      JUMP   L1
+      JUMP   L8
+L7:   NOOP
+      JUMP   L2
+L8:   NOOP
+L5:   NOOP
+      RTRN   2
+L3:   NOOP
+      LDCT   10
+      STVL   0,0
+      LDCT   20
+      STVL   0,1
+L1:   ENLB   0,2
+      LDVL   0,0
+      PRNT
+L2:   ENLB   0,2
+      LDVL   0,1
+      PRNT
+      LDVL   0,0
+      PRNT
+      LDVL   0,1
+      PRNT
+      DLOC   2
+      STOP
+      END 
